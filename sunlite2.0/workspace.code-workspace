@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "fixture-sunlite",
+		"path": "..\\fixture-sunlite"
+	},
+	{
+		"name": "sunLite",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "sunLite"
+  }
+}
