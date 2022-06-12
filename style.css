@@ -132,6 +132,7 @@ body {
 }
 
 .show-case img {
+  hight: 0;
   width: 90%;
   border-left: solid 7px rgba(255, 132, 0, 0.852);
   opacity: 1;
