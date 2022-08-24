@@ -1,0 +1,383 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  height: 100%;
+}
+
+/* 
+.warpper{
+    height: 100%;
+}
+*/
+.nav-bar {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background-color: darkslategrey;
+  border-bottom: solid 5px orange;
+  color: lightgrey;
+}
+
+.nav-bar a {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+.nav-bar li {
+  list-style: none;
+  display: none;
+}
+
+.nav-bar .active a {
+  color: orange;
+}
+
+.nav-bar li a:hover {
+  color: orange;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.nav-bar .fa-bars {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  font-size: 23px;
+}
+
+.nav-bar .h1 {
+  color: lightgrey;
+  font-weight: 200;
+}
+
+.nav-bar .menu-svg {
+  width: 20px;
+  fill: lightgrey;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+
+.nav-bar .menu-svg:hover {
+  fill: orange;
+  -webkit-transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.1s;
+}
+
+.card {
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-box-shadow: 0 0 15px -5px black;
+          box-shadow: 0 0 15px -5px black;
+  padding: 10px;
+  text-align: center;
+  border-bottom: solid 5px orange;
+}
+
+.card a {
+  color: black;
+  text-decoration: none;
+}
+
+.card a:hover h3 {
+  text-decoration: underline;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 15px -5px grey;
+          box-shadow: 0 0 15px -5px grey;
+}
+
+.logo {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border: solid 5px darkslategrey;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 200;
+  color: black;
+  background-color: rgba(100, 97, 97, 0.605);
+}
+
+.show-case {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.show-case img {
+  width: 90%;
+  border-left: solid 7px rgba(255, 132, 0, 0.852);
+  opacity: 1;
+}
+
+.show-case h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.content {
+  width: 90%;
+  text-align: center;
+  padding: 5px;
+  margin: 30px auto;
+}
+
+.form {
+  width: 80%;
+  margin: 30px auto;
+  -webkit-box-shadow: 0 0 20px -5px black;
+          box-shadow: 0 0 20px -5px black;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.form label {
+  font-size: 20px;
+}
+
+.form input {
+  width: 80%;
+  font-size: 18px;
+}
+
+.form textarea {
+  font-size: 18px;
+  height: 200px;
+  width: 80%;
+}
+
+.form .btn {
+  width: 45%;
+  font-size: 18px;
+  background-color: darkslategrey;
+  border: none;
+  padding: 7px;
+  color: lightgrey;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 15px -5px black;
+          box-shadow: 0 0 15px -5px black;
+}
+
+.form div {
+  text-align: center;
+  margin: 10px;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery h3 {
+  text-align: center;
+  font-size: 25px;
+  margin: 15px;
+}
+
+.gallery img {
+  width: 85%;
+  margin: 20px auto;
+  -webkit-box-shadow: 0 0 20px -5px black;
+          box-shadow: 0 0 20px -5px black;
+  border-left: solid 7px rgba(255, 132, 0, 0.852);
+}
+
+.business-card img {
+  height: 200px;
+  border-radius: 100px;
+}
+
+#index {
+  width: 0;
+  height: 100vh;
+  background-color: lightgrey;
+  position: absolute;
+  position: fixed;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  top: 0;
+  right: 0;
+}
+
+#index .btn {
+  border: none;
+  padding: 7px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  border-radius: 7px;
+  letter-spacing: 1px;
+}
+
+#index .btn:hover {
+  text-decoration: underline;
+}
+
+#index .links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#index .links a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#index .links a:hover {
+  text-decoration: underline;
+}
+
+#menuContext {
+  display: none;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 18px;
+  padding: 5px;
+  border-bottom: solid 5px orange;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .icon img {
+  width: 25px;
+  margin-left: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-bar h1 {
+    margin-left: 20px;
+  }
+  .nav-bar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-bar li {
+    display: block;
+    padding-right: 20px;
+  }
+  .nav-bar svg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .show-case img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 975px) {
+  .index-html-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 30px auto;
+    grid-gap: 20px;
+  }
+  .show-case img {
+    width: 770px;
+    border-left: solid 30px orange;
+  }
+  .card {
+    margin: 10px;
+    width: 95%;
+    margin: auto;
+  }
+  .gallery div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .form {
+    width: 65%;
+  }
+  .form input {
+    width: 55%;
+  }
+  .form textarea {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1192px) {
+  .form {
+    width: 50%;
+  }
+  .form input {
+    width: 50%;
+  }
+  .form textarea {
+    width: 55%;
+  }
+  .info-card {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .gallery img {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
