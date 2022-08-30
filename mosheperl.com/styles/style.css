@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .nav-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar .nav-list ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.nav-bar .nav-list ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#show-case {
+  position: relative;
+  background-image: url("/back.jpg");
+  height: 45vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+#show-case .content {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+#show-case .content h2 {
+  font-size: 40px;
+}
+
+#show-case .content h3 {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+#about {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#about img {
+  width: 400px;
+  -webkit-box-shadow: 0 0 20px -5px black;
+          box-shadow: 0 0 20px -5px black;
+  border-radius: 10px;
+  opacity: 0;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#about .about-me-para {
+  font-size: 25px;
+  padding: 30px;
+  text-align: center;
+}
+
+#about .about-me-para p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 35px;
+  text-align: justify;
+  margin: 0 0 120px 20px;
+}
+
+#about .about-me-para .btn {
+  background-color: darkslategrey;
+  text-decoration: none;
+  padding: 15px 20px;
+  color: lightgrey;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px -5px black;
+          box-shadow: 0 0 20px -5px black;
+}
+
+#about .about-me-para .btn:hover {
+  background-color: lightgrey;
+  color: black;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+#contact {
+  width: 80%;
+  margin: auto;
+}
+
+#contact .contact-form {
+  margin: auto;
+  width: 80%;
+  height: 770px;
+  overflow: hidden;
+  border: black;
+  text-align: center;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+}
+/*# sourceMappingURL=style.css.map */
